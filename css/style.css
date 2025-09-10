@@ -179,6 +179,7 @@ h1 {
   grid-template-columns: 1fr;
   gap: 10px;
   margin-left: 10px;
+  justify-content: left;
 }
 
 input {
@@ -189,4 +190,5 @@ input {
 textarea {
    background-color: rgb(253, 238, 228);
    outline-color: rgb(45, 45, 20);
+
 }
