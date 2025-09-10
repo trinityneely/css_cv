@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  background-color: rgb(255, 248, 243);
+  position: relative;
+  min-height: 100vh;
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(32, 6, 39);
+  color: rgb(123, 98, 129);
+  padding: 0px 10px 0px 10px;
+}
+nav a {
+  color: rgb(123, 98, 129);
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgb(92, 74, 97);
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	display: flex;
+  justify-content: center;
+  gap: 5px;
+  
+  background-color: rgb(32, 6, 39);
+  color: rgb(123, 98, 129);
+  padding : 5px 0px 5px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: rgb(123, 98, 129);
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(92, 74, 97);
+}
+
+/*********** Splash Page ************************/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 238, 228);
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+header h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: rgb(170, 139, 124);
+  font-weight: 600;
+}
+
+header img {
+  margin: 5px 0px;
+  border: 2px solid rgb(254, 243, 236);
+}
+
+.address {
+  text-align: center;
+  background-color: rgb(253, 238, 228);
+  color: rgba(143, 113, 99, 0.650);
+  margin: 0;
+  padding: 2px;
+}
+
+.tagline {
+  text-align: center;
+  background-color: rgb(253, 238, 228);
+  margin: 0;
+  padding: 2px 0px 15px 0px;
+}
+
+/************* Sections ********************/
+hr {
+  border: 0;
+}
+
+section h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: rgb(45, 45, 20);
+  margin-left: 10px;
+  padding: 0px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  gap: 10px;
+  padding: 5px 10px;
+  background-color: rgb(253, 238, 228);
+}
+
+section ul {
+  list-style-type: none;
+  line-height: 1.3em;
+  padding: 5px 10px;
+  background-color: rgb(253, 238, 228);
+}
+
+section a {
+  color: rgba(143, 113, 99, 0.650);
+  text-decoration: none;
+}
+
+section a:hover {
+  color: rgba(143, 113, 99);;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px 10px;
+  gap: 20px;
+  background-color: rgb(253, 238, 228);
+  color:rgb(45, 45, 20);
+}
+
+.card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(67, 75, 39, 0.619);
+  width: 350px;
+  border: 1px solid rgb(45, 45, 20);
+}
+
+.card ul {
+  background-color: rgba(67, 75, 39, 0);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+}
+
+/**************   Contact Page   *****************/
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: rgb(45, 45, 20);
+  font-weight: 600;
+  margin: 15px 0px 4px 10px;
+}
+
+.contact-address {
+  color: rgba(143, 113, 99, 0.650);
+  margin: 0px 0px 15px 10px;
+}
+
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+input {
+  background-color: rgb(253, 238, 228);
+  outline-color: rgb(45, 45, 20);
+}
+
+textarea {
+   background-color: rgb(253, 238, 228);
+   outline-color: rgb(45, 45, 20);
+}
